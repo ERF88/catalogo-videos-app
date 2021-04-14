@@ -141,7 +141,7 @@ class GenreControllerTest extends TestCase
             ]);
     }
 
-    public function testDelete()
+    public function testDestroy()
     {
         $genre = factory(Genre::class)->create();
         $response = $this->delete(route('genres.destroy', ['genre' => $genre->id]));

@@ -174,7 +174,7 @@ class CategoryControllerTest extends TestCase
         ]);
     }
 
-    public function testDelete()
+    public function testDestroy()
     {
         $category = factory(Category::class)->create();
         $response = $this->delete(route('categories.destroy', ['category' => $category->id]));
