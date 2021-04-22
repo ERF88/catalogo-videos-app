@@ -2,3 +2,4 @@
 
 - Criando recurso Category
 - Testes de integração em categorias e gêneros
+- Abstract CRUD e Resource CastMember
