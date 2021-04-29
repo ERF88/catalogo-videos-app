@@ -50,6 +50,10 @@ class CastMemberControllerTest extends TestCase
         $data = ['type' => 't'];
         $this->assertInvalidationInStoreAction($data, 'in');
         $this->assertInvalidationInUpdateAction($data, 'in');
+
+        $data = ['type' => 'a'];
+        $this->assertInvalidationInStoreAction($data, 'integer');
+        $this->assertInvalidationInUpdateAction($data, 'integer');
     }
 
     public function testStore()

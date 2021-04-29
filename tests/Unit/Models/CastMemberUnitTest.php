@@ -7,7 +7,7 @@ use App\Models\Traits\Uuid;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Tests\TestCase;
 
-class CastMemberTest extends TestCase
+class CastMemberUnitTest extends TestCase
 {
     private $castMember;
 
@@ -42,7 +42,7 @@ class CastMemberTest extends TestCase
 
     public function testCastsAttribute()
     {
-        $casts = ['id' => 'string'];
+        $casts = ['id' => 'string', 'type' => 'integer'];
         $this->assertEquals($casts, $this->castMember->getCasts());
     }
 
